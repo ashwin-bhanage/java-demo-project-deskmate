@@ -20,7 +20,7 @@
     <Loggers>
 
         <!-- Application Flow Logger -->
-        <Logger name="com.deskmate.dbps"
+        <Logger name="com.deskmate"
                 level="info"
                 additivity="false">
             <AppenderRef ref="Console"/>
@@ -28,7 +28,7 @@
         </Logger>
 
         <!-- DAO Error Logger -->
-        <Logger name="com.deskmate.dbps.dao"
+        <Logger name="com.deskmate.dao"
                 level="error"
                 additivity="false">
             <AppenderRef ref="Console"/>
