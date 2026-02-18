@@ -1,8 +1,14 @@
 package com.deskmate.config;
 
+import com.deskmate.controller.BookingController;
 import com.deskmate.controller.DeskController;
+import com.deskmate.dao.BookingDao;
 import com.deskmate.dao.DeskDao;
+import com.deskmate.dao.PaymentDao;
+import com.deskmate.dao.impl.JdbcBookingDao;
 import com.deskmate.dao.impl.JdbcDeskDao;
+import com.deskmate.dao.impl.JdbcPaymentDao;
+import com.deskmate.service.BookingService;
 import com.deskmate.service.DeskService;
 
 public class AppConfig {
@@ -12,17 +18,17 @@ public class AppConfig {
         DeskService deskService = new DeskService(deskDao);
         return new DeskController(deskService);
     }
-//
-//    public BookingController bookingController() {
-//        DeskDao deskDao = new JdbcDeskDao();
-//        BookingDao bookingDao = new JdbcBookingDao();
-//        PaymentDao paymentDao = new JdbcPaymentDao();
-//
-//        BookingService bookingService =
-//                new BookingService(deskDao, bookingDao, paymentDao);
-//
-//        return new BookingController(bookingService);
-//    }
+
+    public BookingController bookingController() {
+
+        BookingDao bookingDao = new JdbcBookingDao();
+        PaymentDao paymentDao = new JdbcPaymentDao();
+
+        BookingService bookingService =
+                new BookingService(bookingDao, paymentDao);
+
+        return new BookingController(bookingService);
+    }
 //
 //    public ReportController reportController() {
 //        ReportDao reportDao = new JdbcReportDao();
