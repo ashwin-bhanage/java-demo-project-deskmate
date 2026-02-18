@@ -1,10 +1,10 @@
 package com.deskmate.service;
 
 import com.deskmate.dao.DeskDao;
-import com.deskmate.exception.EntityNotFoundException;
-import com.deskmate.exception.ValidationException;
+import com.deskmate.exceptions.EntityNotFoundException;
+import com.deskmate.exceptions.ValidationException;
 import com.deskmate.model.Desk;
-import com.deskmate.util.ValidationUtil;
+import com.deskmate.utils.ValidationUtil;
 
 import java.util.List;
 

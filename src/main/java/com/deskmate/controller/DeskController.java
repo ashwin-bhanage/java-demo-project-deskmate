@@ -2,7 +2,7 @@ package com.deskmate.controller;
 
 import com.deskmate.model.Desk;
 import com.deskmate.service.DeskService;
-import com.deskmate.util.InputUtil;
+import com.deskmate.utils.InputUtil;
 
 import java.util.List;
 

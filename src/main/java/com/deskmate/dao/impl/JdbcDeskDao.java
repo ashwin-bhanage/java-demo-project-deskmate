@@ -1,9 +1,9 @@
 package com.deskmate.dao.impl;
 
 import com.deskmate.dao.DeskDao;
-import com.deskmate.exception.DatabaseOperationException;
+import com.deskmate.exceptions.DatabaseOperationException;
 import com.deskmate.model.Desk;
-import com.deskmate.util.DbConnectionFactory;
+import com.deskmate.utils.DbConnectionFactory;
 
 import java.sql.*;
 import java.util.ArrayList;
