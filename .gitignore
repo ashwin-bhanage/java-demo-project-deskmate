@@ -1,1 +1,28 @@
-/target/
+# Maven build output
+target/
+
+# Logs
+logs/
+*.log
+
+# IDE folders
+.idea/
+*.iml
+.vscode/
+.settings/
+.project
+.classpath
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Database config (do NOT commit credentials)
+src/main/resources/db.properties
+
+# Local environment files
+.env
+.env*
+
+# Eclipse metadata (if using Eclipse)
+.metadata/
