@@ -51,8 +51,8 @@ public class App {
                             config.deskController().menu();
                         }
                     }
-//
-//                    case 2 -> config.bookingController().menu();
+
+                    case 2 -> config.bookingController().menu();
 //
 //                    case 3 -> config.reportController().menu();
 //
