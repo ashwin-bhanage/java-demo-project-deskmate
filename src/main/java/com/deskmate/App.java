@@ -54,7 +54,7 @@ public class App {
 
                     case 2 -> config.bookingController().menu();
 //
-//                    case 3 -> config.reportController().menu();
+                    case 3 -> config.reportController().menu();
 //
                     case 0 -> {
                         log.info("DeskMate stopped by user={}", username);
