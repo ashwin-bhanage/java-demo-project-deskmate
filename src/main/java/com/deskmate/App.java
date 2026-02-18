@@ -37,20 +37,20 @@ public class App {
                 }
 
                 System.out.println("2. Bookings");
-                System.out.println("3. Reports");
+                System.out.println("3. Reports");	
                 System.out.println("0. Exit");
 
                 int choice = InputUtil.readInt("Choose: ");
 
                 switch (choice) {
 
-//                    case 1 -> {
-//                        if (role != Role.ADMIN) {
-//                            System.out.println("Access denied.");
-//                        } else {
-//                            config.deskController().menu();
-//                        }
-//                    }
+                    case 1 -> {
+                        if (role != Role.ADMIN) {
+                            System.out.println("Access denied.");
+                        } else {
+                            config.deskController().menu();
+                        }
+                    }
 //
 //                    case 2 -> config.bookingController().menu();
 //

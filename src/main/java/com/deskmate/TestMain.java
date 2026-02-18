@@ -1,10 +1,10 @@
 package com.deskmate;
 
-import com.deskmate.utils.DbConnectionFactory;
-
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
+
+import com.deskmate.utils.DbConnectionFactory;
 
 public class TestMain {
 
